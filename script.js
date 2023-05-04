@@ -5,6 +5,7 @@ function Person(name, age) {
 
 function Employee(name, age, jobTitle) extends Person {
 	super(name,age);
+	Person.prototype = Employee;
 	jobGreet(){
 		console.log(`Hello, my name is ${this.name}, I am ${this.years} years old, and my job title is ${this.jobTitle}.`)
 	}
